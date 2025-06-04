@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="myWEB.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tugasan</title>
+    </head>
+    <body>
+        <div class="t">
+            <h1>Tugasan</h1>
+
+            <form onsubmit="return false">
+                <textarea placeholder="Masukkan tugasan..."></textarea>
+                <button id="addBtn"><p>Tambah</p></button>
+            </form>
+
+            <section>
+                <h3>Senarai Tugasan</h3>
+                <div class="tc">
+                    <!-- <div class="todo">
+                        <p>Tugasan yang perlu diselesaikan !</p>
+                        <div class="bc">
+                            <button class="ib"><i class="fa-solid fa-pen"></i></button>
+                            <button class="ib"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+        </div>
+        
+        <!--Try JS button-->
+        <button id="click-test" style="color: aqua;background-color: black;font-size: 20px;" type="button" onclick="myfunction()">Click here</button>
+
+        <ul class="topBar">
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT ME</a></li>
+            <li><a href="">NOTHING</a></li>
+            <li><a href="">CONTACT</a></li>
+        </ul>
+    </body>
+    <script>
+        function myfunction() {
+            document.getElementById("click-test").innerHTML = "Oppss what happen ?!!!";
+        }
+    </script>
+    <script src="index.js"></script>
+</html>

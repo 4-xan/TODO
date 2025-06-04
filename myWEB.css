@@ -1,0 +1,106 @@
+.t {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.t h1{
+    text-align: center;
+}
+
+.t form, section {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.t form textarea {
+    resize: none;
+    max-width: 100%;
+    min-height: 60px;
+    padding: 10px;
+}
+
+.t form button {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.t .ib {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0 8px;
+    display: grid;
+    place-items: center;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.t .ib:hover {
+    background-color: aquamarine;
+
+}
+
+.t .bc {
+    display: flex;
+    gap: 6px;
+}
+
+.t .tc, .todo {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.t .todo {
+    padding: 14px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+
+.topBar{
+    background-color: rgb(56, 56, 56);
+    color: white;
+    float: top;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+.topBar li{
+    float: left;
+    
+}
+.topBar a{
+    display: block;
+    padding: 1dvb;
+    text-decoration: none;
+    text-align: center;
+    color: aliceblue;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(56, 56, 56);
+}
+
+.topBar a:hover{
+    background-color: aliceblue;
+    color: rgb(56, 56, 56);
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
