@@ -25,8 +25,7 @@ function addTodo() {
 function editTodo(index) {
     textarea.value = todoList[index]
     todoList = todoList.filter((element, elementIndex) => {
-        if (index === elementIndex) {return false}
-        return true
+        return index !== elementIndex;
     })
 
     updateUI()
@@ -34,8 +33,7 @@ function editTodo(index) {
 
 function deleteTodo(index) {
     todoList = todoList.filter((element, elementIndex) => {
-        if (index === elementIndex) {return false}
-        return true
+        return index !== elementIndex;
     })
 
     updateUI()
@@ -62,4 +60,16 @@ function updateUI() {
     localStorage.setItem('todo', JSON.stringify({todoList}))
 }
 
+//Click button Tambah == Submit
 addBtn.addEventListener('click', addTodo)
+
+//Press enter == Submit
+//Shift + Enter == newline
+ textarea.addEventListener("keydown", function(event) {
+    if (event.key === "Enter" && !event.shiftKey) {
+      // Prevent adding a new line
+      event.preventDefault();
+
+      addTodo();
+    }
+  });
